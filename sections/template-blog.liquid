@@ -1,0 +1,109 @@
+<div class="py-8">
+    {% paginate blog.articles by section.settings.number_of_blog_posts %}
+
+        <h1 class="text-center text-3xl">{{ blog.title }}</h1>
+
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {% for article in blog.articles %}
+                    <article class="w-full py-6 px-3">
+                        <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                            {% if article.image %}
+                                <a href="{{ article.url }}">
+                                    <img class="w-full h-60 object-cover" src="{{ article.image | image_url: width: 400 }}" alt="{{ article.image.alt }}">
+                                </a>
+                            {% else %}
+                                <a href="{{ article.url }}">
+                                    {{ 'image' | placeholder_svg_tag: 'w-full h-60 object-cover bg-gray-100' }}
+                                </a>
+                            {% endif %}
+
+                            <div class="p-4">
+                                <div class="flex gap-6 items-center">
+                                    {% if section.settings.enable_published_date %}
+                                        <div class="flex gap-1.5 items-center text-sm text-gray-400">
+                                            {% render 'icon-date' %}
+                                            <time datetime="{{ article.published_at | date: '%B %d, %Y' }}">{{ article.published_at | date: '%B %d, %Y' }}</time>
+                                        </div>
+                                    {% endif %}
+                                    {% if section.settings.enable_comments_counter %}
+                                        <div class="flex gap-1.5 items-center text-sm text-gray-400">
+                                            {% render 'icon-comment' %}
+                                            <span>{{ article.comments_count }}</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                    
+                                <h2 class="text-xl font-medium my-4">{{ article.title }}</h2>
+                    
+                                {% if article.excerpt.size > 0 %}
+                                    <p>{{ article.excerpt | strip_html | truncatewords: section.settings.number_of_words_in_excerp }}</p>
+                                {% elsif section.settings.enable_excerp %}
+                                    <p>{{ article.content | strip_html | truncatewords: section.settings.number_of_words_in_excerp }}</p>
+                                {% endif %}
+    
+                                <a href="{{ article.url }}" class="font-medium text-blue-600 hover:text-blue-400 transition duration-300 mt-4 block">{{ section.settings.blog_read_more }}</a>
+                            </div>
+                
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto">
+            {% render 'pagination', pagination: paginate %}
+        </div>
+    {% endpaginate %}
+</div>
+
+
+{% schema %}
+{
+    "name": "Blog",
+    "settings": [
+        {
+            "type": "range",
+            "id": "number_of_blog_posts",
+            "step": 1,
+            "min": 1,
+            "max": 6,
+            "label": "Blog posts per page",
+            "default": 3
+        },
+        {
+            "type": "range",
+            "id": "number_of_words_in_excerp",
+            "step": 1,
+            "min": 5,
+            "max": 30,
+            "label": "Max words in post excerp",
+            "default": 15
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_excerp",
+            "default": true,
+            "label": "Display excerp text"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_published_date",
+            "default": true,
+            "label": "Display publication date"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_comments_counter",
+            "default": true,
+            "label": "Display comments counter"
+        },
+        {
+            "type": "text",
+            "id": "blog_read_more",
+            "default": "Read more",
+            "label": "Read more label"
+        }
+    ]
+}
+{% endschema %}
