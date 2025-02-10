@@ -1019,6 +1019,153 @@
         "shipping_used_as_billing_notice": "Це також буде використано як вашу платіжну адресу для цього замовлення.",
         "address_update": "Оновити адресу",
         "shipping_address_title": "Відправити до"
+      },
+      "stock": {
+        "price_update": {
+          "title": "Оновлення ціни",
+          "description": "Ціни на ці товари змінилися та оновлюються у вашому кошику."
+        },
+        "price_and_quantity_update": {
+          "title": "Оновлення ціни та кількості",
+          "description": "Ціни та доступні кількості для цих товарів змінилися та оновлюються у вашому кошику."
+        },
+        "out_of_stock": {
+          "description": "Ці товари більше не доступні та були видалені з вашого кошика.",
+          "items_unavailable": "Деякі товари більше не доступні та були видалені з вашого кошика."
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Недоступний товар",
+          "other": "Недоступні продукти"
+        },
+        "products_not_available": {
+          "one": "Цей продукт буде видалено з вашого кошика, оскільки він недоступний у вашій країні/регіоні.",
+          "other": "Ці продукти буде видалено з вашого кошика, оскільки вони недоступні у вашій країні/регіоні."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Цей продукт недоступний у вашій країні/регіоні.",
+          "other": "Ці продукти недоступні у вашій країні/регіоні."
+        },
+        "unavailable_label": "Недоступний"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Цей продукт недоступний для доставки в %{location_name}.",
+          "some_products_other": "Ці продукти недоступні для доставки в %{location_name}.",
+          "all_products_one": "Продукт у вашому кошику недоступний для доставки в %{location_name}.",
+          "all_products_other": "Продукти у вашому кошику недоступні для доставки до %{location_name}."
+        },
+        "missing_country_fallback": "ваша країна",
+        "indeterminate_location_fallback": "ваше місцезнаходження",
+        "cart_updated": "Ваш кошик оновлено.",
+        "change_address_only": "Щоб продовжити, змініть адресу доставки.",
+        "change_address_or_remove": "Змініть адресу доставки або %{remove_action}.",
+        "remove_items_action": {
+          "one": "видалити недоступний товар",
+          "other": "видалити недоступні елементи"
+        },
+        "empty_cart_action": "спорожніть кошик і поверніться в магазин"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Немає можливості доставки для %{count} товару",
+            "other": "Немає можливості доставки для %{count} позицій"
+          },
+          "message": {
+            "one": "Цей товар буде видалено з вашого кошика, оскільки для вашої адреси недоступні способи доставки.",
+            "other": "Ці товари буде видалено з вашого кошика, оскільки для вашої адреси недоступні способи доставки."
+          },
+          "label": "Без доставки"
+        }
+      },
+      "order_summary": {
+        "title": "Резюме замовлення",
+        "group_title_label": "Частина \"%{group_title}\"",
+        "number_items": {
+          "one": "%{count} елемент",
+          "other": "%{count} елементів"
+        },
+        "view_all_items": {
+          "one": "Переглянути %{count} елемент",
+          "other": "Переглянути всі %{count} елементів"
+        },
+        "more_items_modal": {
+          "search_item": "Пошук",
+          "clear_search": "Очистити пошук",
+          "empty_results": "Не знайдено результатів для \"%{searchText}\". Перевірте правопис або використайте інше слово чи фразу.",
+          "number_items_shown": "%{shownNumber} із %{totalNumber} елементів"
+        },
+        "order_name_label": "Замовити %{name}",
+        "shopping_cart_label": "Кошик для покупок",
+        "discount_title": "Знижка",
+        "discount_title_stacking": {
+          "one": "Знижка",
+          "other": "Знижки"
+        },
+        "discount_order_stacking": {
+          "one": "Замовляйте знижку",
+          "other": "Замовляйте знижки"
+        },
+        "discount_label": "Код знижки",
+        "discount_not_found": "Не вдалося знайти дійсну знижку, яка відповідає введеному коду",
+        "discount_placeholder": "Код знижки",
+        "discount_code_applied": "Код знижки застосовано",
+        "gift_card_applied": "Подарункова картка застосована",
+        "enter_shipping_address": "Введіть адресу доставки",
+        "gift_card_title": "Подарункова карта",
+        "gift_card_label": "Подарункова карта",
+        "gift_card_placeholder": "Подарункова карта",
+        "gift_card_and_discount_title": "Код знижки або подарункова карта",
+        "gift_card_and_discount_label": "Код знижки або подарункова карта",
+        "gift_card_and_discount_placeholder": "Код знижки або подарункова карта",
+        "remove_gift_card_label": "Прозора подарункова карта",
+        "remove_discount_label": "Зняти знижку",
+        "return_restocking_fee_label": "Плата за поповнення запасів",
+        "return_shipping_fee_label": "Зворотна доставка",
+        "free_shipping_discount_label": "Безкоштовна доставка",
+        "applied_free_shipping_discount_label": "Прикладний",
+        "apply_discount_button_label": "Застосувати",
+        "applied_discount_message": "%{amount} знижки на загальну вартість замовлення",
+        "discount_has_been_applied": "Знижку застосовано",
+        "discount_has_been_removed": "Знижку видалено",
+        "gift_card_has_been_applied": "Подарункову картку застосовано",
+        "gift_card_has_been_removed": "Подарункову картку видалено",
+        "gift_card_subscriptions_notice": "Подарункові картки застосовуються лише до вашого першого платежу",
+        "discount_already_applied": "До цього замовлення застосована знижка. Ви не можете додати іншу знижку.",
+        "cart_does_not_meet_discount_requirements_notice": "Код знижки <strong style=\"text-transform:uppercase\">%{code}</strong> недійсний для товарів у вашому кошику",
+        "discount_requires_customer_notice": "Введіть інформацію про доставку, щоб застосувати код знижки <strong style=\"text-transform:uppercase\">%{code}</strong>",
+        "customer_does_not_meet_discount_requirements_notice": "Код знижки <strong style=\"text-transform:uppercase\">%{code}</strong> вам зараз недоступний",
+        "eligible_customer_missing_notice": "Код знижки <strong style=\"text-transform:uppercase\">%{code}</strong> вимагає відповідного клієнта",
+        "shipping_information_does_not_meet_discount_requirements_notice": "Код знижки <strong style=\"text-transform:uppercase\">%{code}</strong> недоступний для вашої адреси доставки",
+        "customer_already_used_once_per_customer_discount_notice": "Код знижки <strong style=\"text-transform:uppercase\">%{code}</strong> уже використано",
+        "subtotal_label": "Проміжний підсумок",
+        "subtotal_label_with_quantity": {
+          "one": "Проміжний підсумок · %{count} елемент",
+          "other": "Проміжний підсумок · %{count} елементів"
+        },
+        "shipping_label": "Доставка",
+        "pickup_label": "Самовивіз в магазині",
+        "no_pickup_location": "Немає доступних місць отримання.",
+        "pickup_unavailable_banner_title": {
+          "one": "Ваш товар не можна забрати з магазину",
+          "other": "Ваші речі не можна забрати з магазину"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "Відправити за адресою",
+          "ship_to_address_instead_html": "%{link} замість цього"
+        },
+        "tip_label": "Підказка",
+        "calculating_shipping": "Розрахунок…",
+        "calculating": "Розрахунок…",
+        "shipping_default_value": "Розраховується на наступному кроці",
+        "shipping_discount_title": "Знижка на доставку",
+        "shipping_pending_message": "Ще не доступний",
+        "shipping_policy_link": "Вартість доставки",
+        "taxes_label": "податки",
+        "estimated_taxes_label": "Орієнтовні податки",
+        "information_estimated_taxes_label": "Податки (приблизно)"
       }
     },
     "errors": {
@@ -1382,7 +1529,85 @@
       },
       "cash_rounding": "Округлення готівки",
       "adjusted_payment": "Скоригована оплата",
-      "adjusted_total": "Скоригована сума"
+      "adjusted_total": "Скоригована сума",
+      "shipment_timeline": {
+        "expand_events_label": "Показати деталі",
+        "expand_events_accessibility_label": "Показати деталі доставки замовлення",
+        "hide_events_label": "Приховати деталі",
+        "hide_events_accessibility_label": "Приховати деталі доставки замовлення"
+      },
+      "addresses_section_title": "Оплата та доставка",
+      "order_details": "Деталі замовлення",
+      "order_details_skeleton_accessibility_label": "Увійдіть, щоб переглянути всі деталі замовлення.",
+      "billing_address": "Платіжна адреса",
+      "card_ending_with": "закінчується на {{lastDigits}}",
+      "contact": "контакт",
+      "contact_information": "Контактна інформація",
+      "company": "Компанія",
+      "fully_refunded_label": "ПОВЕРНЕНО",
+      "group_title_label": "Частина: {{groupTitle}}",
+      "grouped_view_components": {
+        "expand_line_items": "Показати {{count}} елементів",
+        "collapse_line_items": "Сховати {{count}} елементів",
+        "line_item_summary_list_accessibility_label": "Елементи в наборі {{productTitle}}"
+      },
+      "discount": "Знижка",
+      "hide_items": "Приховати елементи",
+      "loading": "Завантаження деталей замовлення",
+      "loading_finished_accessibility_message": "Деталі замовлення завантажено",
+      "location": "Розташування",
+      "image_gallery": {
+        "next": "Показати наступні елементи",
+        "previous": "Показати попередні елементи",
+        "load_more_items": {
+          "one": "Завантажити ще {{count}} елементів",
+          "other": "Завантажити ще {{count}} елементів"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "Показати зведення замовлення",
+        "closed": "Приховати підсумок замовлення"
+      },
+      "no_data": "Жодного",
+      "no_data_provided_accessibility_label": "{{fieldName}} порожнє",
+      "paid_amount": "Платний",
+      "partially_refunded_label": "ЧАСТКОВО ПОВЕРНЕНО",
+      "payment": {
+        "status_in_review": "Оплата після перевірки",
+        "status_unpaid": "Термін оплати: {{date}}",
+        "title": "Оплата",
+        "payment_type": {
+          "gift_card": "Подарункова карта",
+          "store_credit": "Кредит магазину",
+          "money_order": "Грошовий переказ",
+          "cash_on_delivery": "Накладений платіж (COD)",
+          "bank_deposit": "Банківський депозит",
+          "manual": "Інструкція"
+        },
+        "card_payment_details": "закінчується на {{lastDigits}} - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "закінчується на {{lastDigits}} - {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "Кредит магазину - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Оплачено через Shop Pay частинами",
+          "view_schedule": "Переглянути розклад"
+        },
+        "manual_payment_methods": {
+          "money_order": "Грошовий переказ - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Оплата при доставці (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "Банківський депозит - {{formattedTransactionAmount}}",
+          "manual": "Вручну - {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "Показати все",
+          "show_less": "Показувати менше",
+          "details": "Подробиці",
+          "payment_details": "Платіжні реквізити"
+        },
+        "emv_details": {
+          "aid": "ДОПОМОГА:",
+          "source": "ДЖЕРЕЛО:"
+        }
+      }
     },
     "addresses": {
       "add_button": "Додайте адресу",
@@ -1470,6 +1695,212 @@
         "button": "Вийти всюди",
         "warning_message": "Ви також вийдете з системи на цьому пристрої."
       }
+    },
+    "orders": {
+      "order_status": {
+        "delivery_promise_v2": {
+          "details_modal": {
+            "delivered_after_label": "Доставлено після {{date}}",
+            "delivered_after_description": "Оскільки ваше замовлення надійшло із запізненням, ви маєте право вимагати {{amount}} Shop Cash.",
+            "claimed_shop_cash_description": "Оскільки це замовлення надійшло із запізненням, ви вимагали {{amount}} Shop Cash.",
+            "eligible_to_claim_shop_cash_description": "Оскільки ваше замовлення надійшло із запізненням, ви маєте право вимагати {{amount}} Shop Cash.",
+            "learn_more_button_label": "Дізнайтесь більше",
+            "claim_shop_cash_button_label": "Вимагати готівку магазину",
+            "view_balance_in_shop_button_label": "Перегляньте баланс у магазині",
+            "scan_to_claim_shop_cash_label": "Скануйте, щоб отримати {{amount}} Shop Cash"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "Доставка забезпечена",
+            "mixed_brands_label": "Доставка гарантована",
+            "not_delivered_by_label": "Не доставлено до {{date}}",
+            "modal_accessibility_button_label": "Деталі обіцянки доставки"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "Отримайте готівку в магазині",
+            "no_shop_app_label": "{{appDownloadLink}} щоб отримати готівку в магазині",
+            "download_shop_app_label": "Завантажити магазин"
+          },
+          "details_modal": {
+            "title": "Доставка забезпечена",
+            "modal_accessiblity_label": "Деталі обіцянки доставки",
+            "delivery_guarantee_label": "Гарантія доставки",
+            "delivery_by_label": "Доставка до {{date}}",
+            "delivery_guaranteed_by_label": "Гарантована доставка до {{date}}",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "Shop Promise гарантує швидку та надійну доставку. Вимагайте готівку в магазині, якщо ваше замовлення приходить із запізненням.",
+              "may_be_eligible_not_authorized_label": "Можливо, ви маєте право вимагати Shop Cash, оскільки це замовлення надійшло із запізненням. Увійдіть, щоб переглянути деталі.",
+              "redeemed_label": "Ви вже вимагали Shop Cash, оскільки це замовлення надійшло із запізненням.",
+              "expired_label": "Це замовлення не підлягає претензії щодо затримки доставки, оскільки термін дії 30-денної гарантії закінчився.",
+              "no_shop_cash_label": "Це замовлення не підлягає претензії щодо несвоєчасної доставки, оскільки воно не було оплачено за допомогою Shop Pay.",
+              "no_longer_guaranteed_label": "На ці товари більше не поширюється гарантія доставки.",
+              "claim_shop_cash_title": "Відскануйте, щоб отримати {{amount}} у Shop Cash",
+              "claim_shop_cash_description": "Ви можете використовувати Shop Cash для майбутніх покупок у додатку Shop."
+            }
+          }
+        }
+      },
+      "status_mark_as_delivered": "Позначити як доставлене",
+      "fulfillment_status_title": "Статус виконання: {{status}}",
+      "buy_again": "Купуйте знову",
+      "buy_again_accessibility_label": "Купуйте знову для замовлення {{orderId}}",
+      "manage": "Керувати",
+      "manage_accessiblity_label": "Керувати замовленням {{orderId}}",
+      "group_title_label": "Частина: {{groupTitle}}",
+      "havent_received_your_delivery": "Не отримали свою доставку?",
+      "didnt_pick_up_order": "Не забрали замовлення?",
+      "if_you_didnt_receive_this": "Якщо ви не отримали цього,",
+      "if_not_received": {
+        "one": "Якщо не було отримано,",
+        "other": "Якщо їх не отримали,"
+      },
+      "let_us_know": "Дайте нам знати",
+      "contact_us": "зв'яжіться з нами.",
+      "list_layout_accessibility_label": "Варіанти компонування",
+      "list_title": "Замовлення",
+      "list_title_with_pending_orders": "замовлення:",
+      "list_title_confirmed_orders_accessibility_label": "Замовлення: підтверджено",
+      "list_title_pending_orders_accessibility_label": "Замовлення: очікуються",
+      "switch_order_type_pending_orders_accessibility_label": "Змінити тип замовлення, наразі переглядаються ордери, що очікують на розгляд",
+      "switch_order_type_confirmed_orders_accessibility_label": "Змінити тип замовлення, зараз переглядаються підтверджені замовлення",
+      "order_list": {
+        "column_headers": {
+          "order": "порядок",
+          "items": "Предмети",
+          "total": "Всього",
+          "actions_accessibility_label": "Дії",
+          "products_accessibility_label": "Продукти"
+        },
+        "delivered": "Доставлено {{date}}",
+        "empty_state_order_source_description": "Тут відображатимуться лише замовлення, розміщені на адресу {{email}} .",
+        "empty_state_subtitle": "Перейдіть до магазину, щоб зробити замовлення.",
+        "empty_state_title": "Замовлень ще немає",
+        "empty_state_title_for_pending_orders": "Немає незавершених замовлень",
+        "no_order_banner": "Щоб перевірити своє розширення на сторінці статусу замовлення, створіть замовлення.",
+        "estimated_shortform": "Приблизно {{date}}",
+        "estimated_delivery": "Очікується {{date}}",
+        "one_images_accessibility_label": "Замовлення включає {{lineItemName1}}",
+        "two_images_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}}",
+        "three_images_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}} і ще {{numberOfAdditionalProducts}} продуктів",
+        "more_than_four_products_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} і ще {{numberOfAdditionalProducts}} продуктів",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} продуктів",
+        "carousel": {
+          "one_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість {{lineItemQuantity2}} , {{lineItemName3}} кількість {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість {{lineItemQuantity3}} {{lineItemQuantity2}} , { {{lineItemName3}} кількість {{lineItemQuantity3}} , {{lineItemName4}} кількість {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість { {{lineItemQuantity2}} , {{lineItemName3 {{lineItemName3}} кількість {{lineItemQuantity3}} , {{lineItemName4}} кількість {{lineItemQuantity4}} , {{lineItemName5}} кількість {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість { {{lineItemQuantity2}} , {{lineItemName3 {{lineItemName3}} кількість {{lineItemQuantity3}} , {{lineItemName4}} кількість {{lineItemQuantity4}} , {{lineItemName5}} кількість {{lineItemQuantity5}} , {{lineItemName6}} кількість {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість { {{lineItemQuantity2}} , {{lineItemName3 {{lineItemName3}} кількість {{lineItemQuantity3}} , {{lineItemName4}} кількість {{lineItemQuantity4}} , {{lineItemName5}} кількість {{lineItemQuantity5}} , {{lineItemName6}} кількість {{lineItemQuantity6}} і більше",
+          "view_order_details": "Переглянути деталі замовлення",
+          "previous": "Попередній",
+          "next": "Далі"
+        },
+        "items": {
+          "one": "{{count}} елемент",
+          "other": "{{count}} елементів"
+        },
+        "list_view": "Показати список",
+        "no_filtered_results_description": "Видаліть або налаштуйте фільтри, щоб переглянути свої замовлення",
+        "no_filtered_results_title": "Немає відфільтрованих результатів",
+        "order_link": "Переглянути замовлення {{name}}",
+        "order_number": "Замовити {{name}}",
+        "orders_title": "Підтверджено",
+        "pagination": {
+          "nav_accessibility_label": "Кнопки навігації замовлень",
+          "next": "Далі",
+          "next_accessibility_label": "Наступні замовлення",
+          "previous": "попередня",
+          "previous_accessibility_label": "Попередні замовлення",
+          "load_more": "Завантажте більше",
+          "load_more_accessibility_label": "Завантажити більше замовлень"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Перегляньте замовлення, щоб дізнатися більше",
+            "estimated_delivery": "Очікується {{date}}",
+            "last_updated": "Останнє оновлення {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Приблизно доставка {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "Прострочена оплата",
+            "due": "Термін оплати {{date}}",
+            "due_today": "Термін оплати сьогодні",
+            "due_without_date": "Термін оплати",
+            "due_on_fulfillment": "Оплата після виконання",
+            "pay_to_confirm": "Оплатіть для підтвердження",
+            "payment_not_due": "Платіж ще не настав"
+          },
+          "table_view": {
+            "overdue": "Прострочена",
+            "due": "Термін: {{date}}",
+            "due_today": "Термін виконання сьогодні",
+            "paid": "Платний",
+            "due_without_date": "належний",
+            "due_on_fulfillment": "Підлягає виконанню",
+            "pay_to_confirm": "Оплатіть для підтвердження",
+            "payment_not_due": "Ще не настав термін"
+          }
+        },
+        "sort_by": "Сортувати за: {{option}}",
+        "sort_hide_options_accessibility_label": "Приховати параметри сортування для підтверджених замовлень.",
+        "sort_show_options_accessibility_label": "Показати параметри сортування для підтверджених замовлень.",
+        "sort_currently_sorted_by_accessibility_label": "Наразі відсортовано за: {{option}}",
+        "sort_title": "Сортувати",
+        "sort": {
+          "date": {
+            "newest": "Від новішого до найстарішого",
+            "oldest": "Від найстарішого до найновішого"
+          },
+          "location": {
+            "ascending": "Розташування (Арізона)",
+            "descending": "Розташування (ZA)"
+          },
+          "order_number": {
+            "ascending": "Номер замовлення (від низького до високого)",
+            "descending": "Номер замовлення (від високого до нижчого)"
+          },
+          "order_total": {
+            "ascending": "Загальна сума замовлення (від низького до високого)",
+            "descending": "Загальна сума замовлення (від високого до низького)"
+          }
+        },
+        "filter_title": "фільтр",
+        "filter": {
+          "clear_section": "Очистити розділ",
+          "clear_all": "Очистити все",
+          "apply": "Застосувати",
+          "date": {
+            "start_date": "Дата початку",
+            "end_date": "Кінцева дата",
+            "title": "Дата замовлення"
+          }
+        }
+      }
+    },
+    "account_information": {
+      "profile_card": {
+        "save_accessibility_label": "Зберегти профіль",
+        "title": "Профіль"
+      },
+      "profile_update_confirmation_message": "Профіль оновлено",
+      "title": "Профіль",
+      "people": {
+        "pagination": {
+          "load_more": "Завантажте більше",
+          "load_more_accessibility_label": "Завантажте більше людей",
+          "loading_accessibility_label": "Завантаження людей"
+        }
+      },
+      "add_button": "додати"
     }
   },
   "general": {
